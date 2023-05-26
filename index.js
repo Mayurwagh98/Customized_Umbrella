@@ -26,9 +26,7 @@ let yellow_btn = document.querySelector(".yellow").addEventListener("click", fun
 })
 
 
-
-
-document.getElementById('file-upload').addEventListener('change', function (e) {
+let uploadLogo = document.getElementById('file-upload').addEventListener('change', function (e) {
 
         
             var file = e.target.files[0]; // Get the selected file
@@ -47,9 +45,16 @@ document.getElementById('file-upload').addEventListener('change', function (e) {
             
             reader.readAsDataURL(file); // Read the file as a data URL   
             
+            let {name} = file // destructuring file name 
+
+            let loader_icon_img = document.querySelector(".upload_icon_img")
+            loader_icon_img.src = "./assessts/loader_icon.svg"
+        
+            document.querySelector(".display_file_name").textContent = name// displaying file name on button
             
   });
 
+  
   
   
 
