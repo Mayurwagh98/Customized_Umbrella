@@ -30,7 +30,7 @@ body {
     margin: 1.2rem 0 1.2rem 0.6rem;
 }
 
-#color_box:active{
+#color_box:active {
     border: 2px solid red;
 }
 
@@ -73,7 +73,7 @@ body {
 }
 
 .custom-file-upload>img {
-    margin: -0.3rem 2.4rem 0 0;
+    margin: -0.3rem 3rem 0 0;
     width: 1rem;
 }
 
@@ -107,21 +107,38 @@ body {
     position: absolute;
 }
 
-/* @keyframes rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .image {
-    animation: rotate 4s linear infinite;
-  } */
+.loader {
+    border: 16px solid #f3f3f3;
+    /* Light gray border */
+    border-top: 16px solid #3498db;
+    /* Blue border on top */
+    border-radius: 50%;
+    /* Circular shape */
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    /* Animation properties */
+    margin: 0 auto;
+    /* Center the loader */
+}
 
-  .loader_icon_name{
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+} 
+
+.loader_icon_img {
+    animation: rotate linear 2s;
+  }
+
+.loader_icon_name {
     border: 1px solid red;
     display: inline;
-    
-  }
+
+}
