@@ -14,31 +14,44 @@
           <img
             src="./assessts/Blue umbrella.png"
             alt="blue umbrella"
-            class="image"
+            class="umbrella_image"
+            id="image"
           />
+          <!-- <img
+            src="./assessts/loader_icon.svg"
+            alt="loder image"
+            class="loader_img"
+            id="image"
+          /> -->
+        </div>
+
+        <div id="logo_div">
+          <!-- <img src="" alt="" class="logo_img"/> -->
         </div>
       </section>
       <section class="customize_umbrella_section">
         <div>
           <h1 class="heading">Custom Umbrella</h1>
           <div class="colors_div">
-            <div class="pink"></div>
-            <div class="blue"></div>
-            <div class="yellow"></div>
+            <div class="pink" id="color_box"></div>
+            <div class="blue" id="color_box"></div>
+            <div class="yellow" id="color_box"></div>
           </div>
           <div class="customize_umbrella">
             <h3>Customize your umbrella</h3>
-            <p class="upload_logo_preview">Upload a logo for an instant preview</p>
+            <p class="upload_logo_preview">
+              Upload a logo for an instant preview
+            </p>
             <p class="png_only">.png and .jpg files only. Max size is 5MB</p>
           </div>
           <div>
-            <!-- <input type="file" name="fileToUpload" id="fileToUpload" /> -->
-            <input type="file" id="fileInput" style="display: none" />
-
-            <button id="uploadButton">
-              <img src="./assessts/upload_icon.svg" alt="upload icon" />Upload
-              File
-            </button>
+            <label for="file-upload" class="custom-file-upload">
+              <!-- <i class="fa fa-cloud-upload"> -->
+              <img src="./assessts/upload_icon.svg" alt="upload icon" />
+              <!-- </i> -->
+              Upload Logo
+            </label>
+            <input id="file-upload" type="file" style="display: none" />
           </div>
         </div>
       </section>

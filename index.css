@@ -3,7 +3,8 @@
     margin: 0;
     padding: 0%;
 }
-body{
+
+body {
     background-color: #e6f6fc;
 }
 
@@ -15,7 +16,7 @@ body{
     margin: 9rem auto auto 20rem;
 }
 
-.heading{
+.heading {
     font-size: 2.1rem;
 }
 
@@ -29,27 +30,26 @@ body{
     margin: 1.2rem 0 1.2rem 0.6rem;
 }
 
-.pink {
+#color_box:active{
+    border: 2px solid red;
+}
+
+.pink, .blue, .yellow {
     /* border: 1px solid red; */
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     background-color: #d8348b;
+    cursor: pointer;
 }
 
 .blue {
     /* border: 1px solid red; */
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: #2eb3e5;
 }
 
 .yellow {
     /* border: 1px solid red; */
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
     background-color: #fed247;
 }
 
@@ -57,32 +57,64 @@ body{
     width: 60%;
 }
 
-
-#uploadButton {
+.custom-file-upload {
     display: flex;
-    padding: 0.5rem;
+    padding: 0.6rem;
+    cursor: pointer;
     width: 18rem;
     margin: 0.6rem 0 0 0;
     background-color: #2eb3e5;
+    color: #fff;
     border: none;
-    color: white;
     text-transform: uppercase;
     font-size: 0.8rem;
     font-weight: 600;
+    letter-spacing: 0.1rem;
 }
-#uploadButton > img{
+
+.custom-file-upload>img {
     margin: -0.3rem 4rem 0 0;
-    
 }
-.customize_umbrella_section{
+
+.uploaded_image {
+    width: 3rem;
+    height: 1rem;
+    display: block;
+    margin: auto;
+}
+
+.customize_umbrella_section {
     /* border: 1px solid red; */
     margin: 2rem 0 0 -3rem;
 }
+
 .upload_logo_preview {
     margin: 0 0 0.5rem 0;
     font-size: 0.9rem;
 }
-.png_only{
+
+.png_only {
     margin: 0 0 0 0;
     font-size: 0.7rem;
 }
+
+#logo_div {
+    width: 5rem;
+    height: 1.5rem;
+    z-index: 10;
+    margin: -3rem 0 0 6.6rem;
+    position: absolute;
+}
+
+/* @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .image {
+    animation: rotate 4s linear infinite;
+  } */
