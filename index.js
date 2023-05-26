@@ -1,29 +1,19 @@
+let umbrellaFun = (item,bgc,bodycolor) =>{
+  document.querySelector(".umbrella_image").src = `./assessts/${item}`
+  document.querySelector(".custom-file-upload").style.backgroundColor = bgc
+  document.body.style.backgroundColor = bodycolor
+}
 
 let pink_btn = document.querySelector(".pink").addEventListener("click", function(){
-  
-    document.querySelector(".umbrella_image").src = "./assessts/Pink umbrella.png"
-
-    document.querySelector(".custom-file-upload").style.backgroundColor = "#d8348b"
-
-    document.body.style.backgroundColor = "#FDCEDF"
+  umbrellaFun("Pink umbrella.png","#d8348b","#FDCEDF")
 })
 
 let blue_btn = document.querySelector(".blue").addEventListener("click", function(){
- 
-    document.querySelector(".umbrella_image").src = "./assessts/Blue umbrella.png"
-
-    document.querySelector(".custom-file-upload").style.backgroundColor = "#2eb3e5"
-
-    document.body.style.backgroundColor = "#e6f6fc"
+  umbrellaFun("Blue umbrella.png","#2eb3e5","#e6f6fc")
 })
 
 let yellow_btn = document.querySelector(".yellow").addEventListener("click", function(){
-  
-    document.querySelector(".umbrella_image").src = "./assessts/Yello umbrella.png"
-    
-    document.querySelector(".custom-file-upload").style.backgroundColor = "#fed247"
-
-    document.body.style.backgroundColor = "#FFFFD0"
+  umbrellaFun("Yello umbrella.png","#fed247","#FFFFD0")
 })
 
 
@@ -55,8 +45,6 @@ let uploadLogo = document.getElementById('file-upload').addEventListener('change
       
           document.querySelector(".display_file_name").textContent = name// displaying file name on button
           
-        
-            
   });
 
   
