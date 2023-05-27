@@ -131,14 +131,27 @@ body {
     100% {
         transform: rotate(360deg);
     }
-} 
+}
 
 .loader_icon_img {
     animation: rotate linear 2s;
-  }
+}
 
 .loader_icon_name {
     border: 1px solid red;
     display: inline;
+}
 
+.loader_img {
+    display: block;
+    margin: -11rem 0 0 6.3rem;
+    color: blue;
+    z-index: 20;
+    position: absolute;
+    width: 5rem;
+}
+.remove_btn{
+    margin: -0.1rem 0 0 5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
