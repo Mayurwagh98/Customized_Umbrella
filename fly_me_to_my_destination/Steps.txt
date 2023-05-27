@@ -1,0 +1,11 @@
+Algorightm used - greedy algorightm
+
+Explaination - 
+
+1. The flyMe function takes an array as input, representing the units of fuel available at each airport. 
+
+2. It iterates through the array, keeping track of the maximum fuel available (maxFuel).
+
+3. If maxFuel becomes zero, it means we cannot reach the current airport with the available fuel, so we hire a new plane and update maxFuel accordingly.
+
+4. The function returns the minimum number of planes required to reach the last airport or -1 if it's not possible to reach the last airport.
